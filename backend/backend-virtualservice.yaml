@@ -3,7 +3,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: fib-backend
-  namespace: nookpost
+  namespace: findinberlin
 spec:
   hosts:
   - "fib-dev.jkulzer.dev"
@@ -15,4 +15,3 @@ spec:
         host: backend
         port:
           number: 3001
-
