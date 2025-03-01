@@ -1,0 +1,25 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended"
+	],
+	"kubernetes": {
+		"fileMatch": [
+			"backend/.+\\.yaml$"
+		]
+	},
+	"packageRules": [
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch"
+			],
+			"automerge": true
+		}
+	],
+	"schedule": [
+		"* * * * *"
+	],
+	"ignoreTests": true,
+	"branchConcurrentLimit": 25
+}

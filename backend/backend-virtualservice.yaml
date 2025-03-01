@@ -1,0 +1,18 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: fib-backend
+  namespace: nookpost
+spec:
+  hosts:
+  - "fib-dev.jkulzer.dev"
+  gateways:
+  - istio-system/main-gateway
+  http:
+  - route:
+    - destination:
+        host: backend
+        port:
+          number: 3001
+

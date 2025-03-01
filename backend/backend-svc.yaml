@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+  namespace: findinberlin
+  labels:
+    app: fib-backend
+spec:
+  type: ClusterIP
+  selector:
+    app: fib-backend
+  ports:
+    - name: backend
+      protocol: TCP
+      port: 3001
+      targetPort: backend
