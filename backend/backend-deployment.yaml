@@ -21,7 +21,7 @@ spec:
         image: "ghcr.io/jkulzer/fib-server:v0.1.1"
         env:
           - name: POLYGOL_MAX_SWEEPLINE_SEGMENTS
-            value: 5000000
+            value: "5000000"
         ports:
         - name: backend
           protocol: TCP
