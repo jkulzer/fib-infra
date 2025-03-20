@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: "ghcr.io/jkulzer/fib-server:v0.1.1"
+        image: "ghcr.io/jkulzer/fib-server:v0.1.4"
         env:
           - name: POLYGOL_MAX_SWEEPLINE_SEGMENTS
             value: "5000000"
